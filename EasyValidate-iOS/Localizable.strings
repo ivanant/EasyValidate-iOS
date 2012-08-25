@@ -14,12 +14,12 @@
  limitations under the License.
  */
 
-"INPUT_WARNING_TITLE" = "Input Warning"
-"ALERT_OK_BUTTON" = "OK"
-"EMAIL_ERROR_MESSAGE" = "It's not email."
-"NULL_ERROR_MESSAGE" = "Can not be emput."
-"LENGTH_RANGE_ERROR_MESSAGE" = "Length's range is"
-"LENGTH_MIN_ERROR_MESSAGE" = "Length must bigger than or equal"
-"LENGTH_MAX_ERROR_MESSAGE" = "Length must smaller than or equal"
-"MOBILE_ERROR_MESSAGE" = "It's not mobile."
-"DIGIT_ERROR_MESSAGE" = "It's not digit."
+"INPUT_WARNING_TITLE" = "Input Warning";
+"ALERT_OK_BUTTON" = "OK";
+"EMAIL_ERROR_MESSAGE" = "It's not email.";
+"NULL_ERROR_MESSAGE" = "Can not be emput.";
+"LENGTH_RANGE_ERROR_MESSAGE" = "Length's range is";
+"LENGTH_MIN_ERROR_MESSAGE" = "Length must bigger than or equal";
+"LENGTH_MAX_ERROR_MESSAGE" = "Length must smaller than or equal";
+"MOBILE_ERROR_MESSAGE" = "It's not mobile.";
+"DIGIT_ERROR_MESSAGE" = "It's not digit.";
