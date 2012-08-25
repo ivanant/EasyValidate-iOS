@@ -28,7 +28,32 @@
 		9F3DC84415E8C2D700C2F306 /* MobileChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC84315E8C2D700C2F306 /* MobileChecker.m */; };
 		9F3DC84715E8C2F300C2F306 /* DigitChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC84615E8C2F300C2F306 /* DigitChecker.m */; };
 		9F3DC84A15E8CAE800C2F306 /* StringCheckerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC84915E8CAE700C2F306 /* StringCheckerUtil.m */; };
+		9F7A687415E917C500881840 /* libEasyValidate-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3DC7C215E0DF3300C2F306 /* libEasyValidate-iOS.a */; };
+		9F7A688F15E9228400881840 /* ElementValidationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC82A15E87D2B00C2F306 /* ElementValidationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689015E9228400881840 /* ValidationUITextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC82B15E87EB700C2F306 /* ValidationUITextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689115E9228400881840 /* AndLogicChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC83115E8BF2000C2F306 /* AndLogicChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689215E9228400881840 /* OrLogicChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC83615E8C02200C2F306 /* OrLogicChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689315E9228400881840 /* TextCheckFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC82E15E8B96100C2F306 /* TextCheckFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689415E9228400881840 /* TextValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC83515E8BFB500C2F306 /* TextValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689515E9228400881840 /* EmailChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC83915E8C28400C2F306 /* EmailChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689615E9228400881840 /* NullChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC83C15E8C29400C2F306 /* NullChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689715E9228400881840 /* LengthChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC83F15E8C2C900C2F306 /* LengthChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689815E9228400881840 /* MobileChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC84215E8C2D700C2F306 /* MobileChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689915E9228400881840 /* DigitChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC84515E8C2F300C2F306 /* DigitChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689A15E9228400881840 /* StringCheckerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC84815E8CAE700C2F306 /* StringCheckerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A689B15E9228400881840 /* EasyValidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F3DC7CA15E0DF3300C2F306 /* EasyValidate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F7A68A215E92B0B00881840 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F3DC84B15E8CF0800C2F306 /* Localizable.strings */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F7A688015E91A7000881840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F3DC7B915E0DF3300C2F306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F3DC7C115E0DF3300C2F306;
+			remoteInfo = "EasyValidate-iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9F3DC7C015E0DF3300C2F306 /* CopyFiles */ = {
@@ -101,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7A687415E917C500881840 /* libEasyValidate-iOS.a in Frameworks */,
 				9F3DC80F15E1326800C2F306 /* UIKit.framework in Frameworks */,
 				9F3DC81015E1326800C2F306 /* Foundation.framework in Frameworks */,
 				9F3DC81215E1326800C2F306 /* CoreGraphics.framework in Frameworks */,
@@ -224,6 +250,29 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9F7A688D15E9224600881840 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7A688F15E9228400881840 /* ElementValidationDelegate.h in Headers */,
+				9F7A689015E9228400881840 /* ValidationUITextField.h in Headers */,
+				9F7A689115E9228400881840 /* AndLogicChecker.h in Headers */,
+				9F7A689215E9228400881840 /* OrLogicChecker.h in Headers */,
+				9F7A689315E9228400881840 /* TextCheckFactory.h in Headers */,
+				9F7A689415E9228400881840 /* TextValidator.h in Headers */,
+				9F7A689515E9228400881840 /* EmailChecker.h in Headers */,
+				9F7A689615E9228400881840 /* NullChecker.h in Headers */,
+				9F7A689715E9228400881840 /* LengthChecker.h in Headers */,
+				9F7A689815E9228400881840 /* MobileChecker.h in Headers */,
+				9F7A689915E9228400881840 /* DigitChecker.h in Headers */,
+				9F7A689A15E9228400881840 /* StringCheckerUtil.h in Headers */,
+				9F7A689B15E9228400881840 /* EasyValidate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		9F3DC7C115E0DF3300C2F306 /* EasyValidate-iOS */ = {
 			isa = PBXNativeTarget;
@@ -232,6 +281,7 @@
 				9F3DC7BE15E0DF3300C2F306 /* Sources */,
 				9F3DC7BF15E0DF3300C2F306 /* Frameworks */,
 				9F3DC7C015E0DF3300C2F306 /* CopyFiles */,
+				9F7A688D15E9224600881840 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -253,6 +303,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9F7A688115E91A7000881840 /* PBXTargetDependency */,
 			);
 			name = Sample;
 			productName = Sample;
@@ -291,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7A68A215E92B0B00881840 /* Localizable.strings in Resources */,
 				9F3DC81815E1326800C2F306 /* InfoPlist.strings in Resources */,
 				9F3DC82115E1326800C2F306 /* MainStoryboard.storyboard in Resources */,
 			);
@@ -328,6 +380,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F7A688115E91A7000881840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F3DC7C115E0DF3300C2F306 /* EasyValidate-iOS */;
+			targetProxy = 9F7A688015E91A7000881840 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9F3DC81615E1326800C2F306 /* InfoPlist.strings */ = {
@@ -370,6 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -388,6 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -425,8 +487,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample/Sample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/Build";
 				INFOPLIST_FILE = "Sample/Sample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,9 +502,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sample/Sample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/Build";
 				INFOPLIST_FILE = "Sample/Sample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +540,7 @@
 				9F3DC82715E1326800C2F306 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
