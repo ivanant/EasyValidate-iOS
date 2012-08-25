@@ -15,7 +15,14 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "ElementValidationDelegate.h"
 
 @interface EasyValidate : NSObject
+
+-(bool) checkOneElement:(id <ElementValidationDelegate>) element
+              withAlert:(bool) withAlert;
+-(bool) checkAllElementWithoutAlert:(NSArray <ElementValidationDelegate>*) elements;
+-(bool) checkAllElementWithAlert:(NSArray <ElementValidationDelegate>*) elements
+              onlyShowFirstAlert:(bool) isFirst;
 
 @end

@@ -15,7 +15,67 @@
  */
 
 #import "EasyValidate.h"
+#import <UIKit/UIKit.h>
+#import "ElementValidationDelegate.h"
 
 @implementation EasyValidate
+
+/*
+ Check one element and return result.
+ withAlert: whether show alert.
+ */
+-(bool) checkOneElement:(id <ElementValidationDelegate>) element
+              withAlert:(bool) withAlert
+{
+    bool result = [element validate];
+    // If validate fail and need to show alert
+    if (!result && withAlert) {
+        UIAlertView *resultAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"INPUT_WARNING_TITLE", nil)
+                                                              message:[element getErrorMessage]
+                                                             delegate:nil
+                                                    cancelButtonTitle:NSLocalizedString(@"ALERT_OK_BUTTON", nil)
+                                                    otherButtonTitles:nil];
+        [resultAlert show];
+    }
+    return result;
+}
+
+/*
+ Check all elements without show alert.
+ */
+-(bool) checkAllElementWithoutAlert:(NSArray <ElementValidationDelegate>*) elements
+{
+    for (id <ElementValidationDelegate> nElement in elements) {
+        bool nResult = [self checkOneElement:nElement withAlert:NO];
+        // If nResult is false, return and without continue.
+        if (!nResult) {
+            return NO;
+        }
+    }
+    return YES;
+}
+
+/*
+ Check all elements and show alert.
+ onlyShowFirstAlert: whether show all error messages.
+ */
+-(bool) checkAllElementWithAlert:(NSArray <ElementValidationDelegate>*) elements
+              onlyShowFirstAlert:(bool) isFirst
+{
+    for (id <ElementValidationDelegate> nElement in elements) {
+        bool nResult = [self checkOneElement:nElement withAlert:NO];
+        // If nResult is false and isFirst is YES, show alert, return and without continue.
+        if (!nResult && isFirst) {
+            UIAlertView *resultAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"INPUT_WARNING_TITLE", nil)
+                                                                  message:[nElement getErrorMessage]
+                                                                 delegate:nil
+                                                        cancelButtonTitle:NSLocalizedString(@"ALERT_OK_BUTTON", nil)
+                                                        otherButtonTitles:nil];
+            [resultAlert show];
+            return NO;
+        }
+    }
+    return YES;    
+}
 
 @end
