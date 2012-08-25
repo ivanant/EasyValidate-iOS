@@ -34,7 +34,7 @@
 
 -(NSString *) getErrorMessage
 {
-    return [NSString stringWithFormat:@"%@%@",self.title, errorMsg];
+    return [NSString stringWithFormat:@"%@:%@",self.title, errorMsg];
 }
 
 @end
