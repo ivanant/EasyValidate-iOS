@@ -18,6 +18,16 @@
 		9F3DC81E15E1326800C2F306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC81D15E1326800C2F306 /* AppDelegate.m */; };
 		9F3DC82115E1326800C2F306 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3DC81F15E1326800C2F306 /* MainStoryboard.storyboard */; };
 		9F3DC82415E1326800C2F306 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC82315E1326800C2F306 /* ViewController.m */; };
+		9F3DC82D15E87EB700C2F306 /* ValidationUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC82C15E87EB700C2F306 /* ValidationUITextField.m */; };
+		9F3DC83015E8B96100C2F306 /* TextCheckFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC82F15E8B96100C2F306 /* TextCheckFactory.m */; };
+		9F3DC83315E8BF2100C2F306 /* AndLogicChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC83215E8BF2000C2F306 /* AndLogicChecker.m */; };
+		9F3DC83815E8C02200C2F306 /* OrLogicChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC83715E8C02200C2F306 /* OrLogicChecker.m */; };
+		9F3DC83B15E8C28400C2F306 /* EmailChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC83A15E8C28400C2F306 /* EmailChecker.m */; };
+		9F3DC83E15E8C29500C2F306 /* NullChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC83D15E8C29400C2F306 /* NullChecker.m */; };
+		9F3DC84115E8C2CA00C2F306 /* LengthChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC84015E8C2C900C2F306 /* LengthChecker.m */; };
+		9F3DC84415E8C2D700C2F306 /* MobileChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC84315E8C2D700C2F306 /* MobileChecker.m */; };
+		9F3DC84715E8C2F300C2F306 /* DigitChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC84615E8C2F300C2F306 /* DigitChecker.m */; };
+		9F3DC84A15E8CAE800C2F306 /* StringCheckerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DC84915E8CAE700C2F306 /* StringCheckerUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +63,29 @@
 		9F3DC82015E1326800C2F306 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9F3DC82215E1326800C2F306 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9F3DC82315E1326800C2F306 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F3DC82A15E87D2B00C2F306 /* ElementValidationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementValidationDelegate.h; sourceTree = "<group>"; };
+		9F3DC82B15E87EB700C2F306 /* ValidationUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationUITextField.h; sourceTree = "<group>"; };
+		9F3DC82C15E87EB700C2F306 /* ValidationUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationUITextField.m; sourceTree = "<group>"; };
+		9F3DC82E15E8B96100C2F306 /* TextCheckFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextCheckFactory.h; sourceTree = "<group>"; };
+		9F3DC82F15E8B96100C2F306 /* TextCheckFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextCheckFactory.m; sourceTree = "<group>"; };
+		9F3DC83115E8BF2000C2F306 /* AndLogicChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndLogicChecker.h; sourceTree = "<group>"; };
+		9F3DC83215E8BF2000C2F306 /* AndLogicChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndLogicChecker.m; sourceTree = "<group>"; };
+		9F3DC83515E8BFB500C2F306 /* TextValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextValidator.h; sourceTree = "<group>"; };
+		9F3DC83615E8C02200C2F306 /* OrLogicChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrLogicChecker.h; sourceTree = "<group>"; };
+		9F3DC83715E8C02200C2F306 /* OrLogicChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrLogicChecker.m; sourceTree = "<group>"; };
+		9F3DC83915E8C28400C2F306 /* EmailChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailChecker.h; sourceTree = "<group>"; };
+		9F3DC83A15E8C28400C2F306 /* EmailChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailChecker.m; sourceTree = "<group>"; };
+		9F3DC83C15E8C29400C2F306 /* NullChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NullChecker.h; sourceTree = "<group>"; };
+		9F3DC83D15E8C29400C2F306 /* NullChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullChecker.m; sourceTree = "<group>"; };
+		9F3DC83F15E8C2C900C2F306 /* LengthChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LengthChecker.h; sourceTree = "<group>"; };
+		9F3DC84015E8C2C900C2F306 /* LengthChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LengthChecker.m; sourceTree = "<group>"; };
+		9F3DC84215E8C2D700C2F306 /* MobileChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileChecker.h; sourceTree = "<group>"; };
+		9F3DC84315E8C2D700C2F306 /* MobileChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileChecker.m; sourceTree = "<group>"; };
+		9F3DC84515E8C2F300C2F306 /* DigitChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitChecker.h; sourceTree = "<group>"; };
+		9F3DC84615E8C2F300C2F306 /* DigitChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitChecker.m; sourceTree = "<group>"; };
+		9F3DC84815E8CAE700C2F306 /* StringCheckerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringCheckerUtil.h; sourceTree = "<group>"; };
+		9F3DC84915E8CAE700C2F306 /* StringCheckerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringCheckerUtil.m; sourceTree = "<group>"; };
+		9F3DC84B15E8CF0800C2F306 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +113,12 @@
 		9F3DC7B715E0DF3300C2F306 = {
 			isa = PBXGroup;
 			children = (
-				9F3DC80115E0F5A400C2F306 /* LICENSE */,
-				9F3DC80215E0F5A400C2F306 /* README.md */,
 				9F3DC7C715E0DF3300C2F306 /* EasyValidate-iOS */,
-				9F3DC81315E1326800C2F306 /* Sample */,
 				9F3DC7C415E0DF3300C2F306 /* Frameworks */,
+				9F3DC80115E0F5A400C2F306 /* LICENSE */,
 				9F3DC7C315E0DF3300C2F306 /* Products */,
+				9F3DC80215E0F5A400C2F306 /* README.md */,
+				9F3DC81315E1326800C2F306 /* Sample */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +144,8 @@
 		9F3DC7C715E0DF3300C2F306 /* EasyValidate-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				9F3DC82915E87CAE00C2F306 /* Element */,
+				9F3DC82815E87B4500C2F306 /* Checker */,
 				9F3DC7CA15E0DF3300C2F306 /* EasyValidate.h */,
 				9F3DC7CC15E0DF3300C2F306 /* EasyValidate.m */,
 				9F3DC7C815E0DF3300C2F306 /* Supporting Files */,
@@ -122,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				9F3DC7C915E0DF3300C2F306 /* EasyValidate-iOS-Prefix.pch */,
+				9F3DC84B15E8CF0800C2F306 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,6 +184,42 @@
 				9F3DC81B15E1326800C2F306 /* Sample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F3DC82815E87B4500C2F306 /* Checker */ = {
+			isa = PBXGroup;
+			children = (
+				9F3DC83115E8BF2000C2F306 /* AndLogicChecker.h */,
+				9F3DC83215E8BF2000C2F306 /* AndLogicChecker.m */,
+				9F3DC83615E8C02200C2F306 /* OrLogicChecker.h */,
+				9F3DC83715E8C02200C2F306 /* OrLogicChecker.m */,
+				9F3DC82E15E8B96100C2F306 /* TextCheckFactory.h */,
+				9F3DC82F15E8B96100C2F306 /* TextCheckFactory.m */,
+				9F3DC83515E8BFB500C2F306 /* TextValidator.h */,
+				9F3DC83915E8C28400C2F306 /* EmailChecker.h */,
+				9F3DC83A15E8C28400C2F306 /* EmailChecker.m */,
+				9F3DC83C15E8C29400C2F306 /* NullChecker.h */,
+				9F3DC83D15E8C29400C2F306 /* NullChecker.m */,
+				9F3DC83F15E8C2C900C2F306 /* LengthChecker.h */,
+				9F3DC84015E8C2C900C2F306 /* LengthChecker.m */,
+				9F3DC84215E8C2D700C2F306 /* MobileChecker.h */,
+				9F3DC84315E8C2D700C2F306 /* MobileChecker.m */,
+				9F3DC84515E8C2F300C2F306 /* DigitChecker.h */,
+				9F3DC84615E8C2F300C2F306 /* DigitChecker.m */,
+				9F3DC84815E8CAE700C2F306 /* StringCheckerUtil.h */,
+				9F3DC84915E8CAE700C2F306 /* StringCheckerUtil.m */,
+			);
+			name = Checker;
+			sourceTree = "<group>";
+		};
+		9F3DC82915E87CAE00C2F306 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				9F3DC82A15E87D2B00C2F306 /* ElementValidationDelegate.h */,
+				9F3DC82B15E87EB700C2F306 /* ValidationUITextField.h */,
+				9F3DC82C15E87EB700C2F306 /* ValidationUITextField.m */,
+			);
+			name = Element;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +304,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F3DC7CD15E0DF3300C2F306 /* EasyValidate.m in Sources */,
+				9F3DC82D15E87EB700C2F306 /* ValidationUITextField.m in Sources */,
+				9F3DC83015E8B96100C2F306 /* TextCheckFactory.m in Sources */,
+				9F3DC83315E8BF2100C2F306 /* AndLogicChecker.m in Sources */,
+				9F3DC83815E8C02200C2F306 /* OrLogicChecker.m in Sources */,
+				9F3DC83B15E8C28400C2F306 /* EmailChecker.m in Sources */,
+				9F3DC83E15E8C29500C2F306 /* NullChecker.m in Sources */,
+				9F3DC84115E8C2CA00C2F306 /* LengthChecker.m in Sources */,
+				9F3DC84415E8C2D700C2F306 /* MobileChecker.m in Sources */,
+				9F3DC84715E8C2F300C2F306 /* DigitChecker.m in Sources */,
+				9F3DC84A15E8CAE800C2F306 /* StringCheckerUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
