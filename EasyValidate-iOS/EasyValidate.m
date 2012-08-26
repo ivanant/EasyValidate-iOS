@@ -41,41 +41,55 @@
 }
 
 /*
- Check all elements without show alert.
- */
--(bool) checkAllElementWithoutAlert:(NSArray <ElementValidationDelegate>*) elements
-{
-    for (id <ElementValidationDelegate> nElement in elements) {
-        bool nResult = [self checkOneElement:nElement withAlert:NO];
-        // If nResult is false, return and without continue.
-        if (!nResult) {
-            return NO;
-        }
-    }
-    return YES;
-}
-
-/*
  Check all elements and show alert.
  onlyShowFirstAlert: whether show all error messages.
  */
--(bool) checkAllElementWithAlert:(NSArray <ElementValidationDelegate>*) elements
-              onlyShowFirstAlert:(bool) isFirst
+-(bool) checkAllElement:(NSArray*) elements
+              withAlert:(bool) withAlert
+     onlyShowFirstAlert:(bool) isFirst
 {
-    for (id <ElementValidationDelegate> nElement in elements) {
+    for (id nElement in elements) {
+        // Check element type first.
+        if(![nElement conformsToProtocol:@protocol(ElementValidationDelegate)])
+        {
+            NSException* ex = [[NSException alloc]initWithName:@"Parameter Exception"
+                                                        reason:@"checkAllElementWithAlert:Elements contain a object that no implement ElementValidationDelegate."
+                                                      userInfo:nil];
+            @throw ex;
+        }
+        
         bool nResult = [self checkOneElement:nElement withAlert:NO];
-        // If nResult is false and isFirst is YES, show alert, return and without continue.
-        if (!nResult && isFirst) {
-            UIAlertView *resultAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"INPUT_WARNING_TITLE", nil)
-                                                                  message:[nElement getErrorMessage]
-                                                                 delegate:nil
-                                                        cancelButtonTitle:NSLocalizedString(@"ALERT_OK_BUTTON", nil)
-                                                        otherButtonTitles:nil];
-            [resultAlert show];
-            return NO;
+        // If nResult is NO , show alert or record it.
+        if(!nResult)
+        {
+            [self dealwithAlert:nElement onlyShowFirstAlert:isFirst];
+            if (isFirst) {
+                return NO;
+            }
         }
     }
     return YES;    
 }
 
+/*
+ Private
+ Show alert or record it.
+ */
+-(void) dealwithAlert:(id <ElementValidationDelegate>) element
+   onlyShowFirstAlert:(bool) isFirst
+{
+    if(isFirst)
+    {
+        NSString *title = NSLocalizedString(@"INPUT_WARNING_TITLE", nil);
+        NSString *message = [element getErrorMessage];
+        NSString *cancelButton = NSLocalizedString(@"ALERT_OK_BUTTON", nil);
+        
+        UIAlertView *resultAlert = [[UIAlertView alloc] initWithTitle:title
+                                                              message:message
+                                                             delegate:nil
+                                                    cancelButtonTitle:cancelButton
+                                                    otherButtonTitles:nil];
+        [resultAlert show];
+    }
+}
 @end

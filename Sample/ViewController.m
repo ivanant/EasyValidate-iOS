@@ -38,8 +38,8 @@
 }
 
 - (IBAction)checkAll:(id)sender {
-    NSArray *elements = {self.email, self.mobile, self.digit};
+    NSArray *elements = [[NSArray alloc] initWithObjects: self.email, self.mobile, self.digit, nil];
     EasyValidate *easyValidate = [[EasyValidate alloc] init];
-    [easyValidate checkOneElement:self.email withAlert:YES];
+    [easyValidate checkAllElement:elements withAlert:YES onlyShowFirstAlert:YES];
 }
 @end

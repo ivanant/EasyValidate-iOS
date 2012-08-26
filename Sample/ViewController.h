@@ -18,7 +18,6 @@
 #import "ValidationUITextField.h"
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UISwitch *allRequired;
 @property (weak, nonatomic) IBOutlet ValidationUITextField *email;
 @property (weak, nonatomic) IBOutlet ValidationUITextField *mobile;
 @property (weak, nonatomic) IBOutlet ValidationUITextField *digit;

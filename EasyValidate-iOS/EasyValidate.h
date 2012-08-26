@@ -21,8 +21,8 @@
 
 -(bool) checkOneElement:(id <ElementValidationDelegate>) element
               withAlert:(bool) withAlert;
--(bool) checkAllElementWithoutAlert:(NSArray <ElementValidationDelegate>*) elements;
--(bool) checkAllElementWithAlert:(NSArray <ElementValidationDelegate>*) elements
-              onlyShowFirstAlert:(bool) isFirst;
+-(bool) checkAllElement:(NSArray *) elements
+              withAlert:(bool) withAlert
+     onlyShowFirstAlert:(bool) isFirst;
 
 @end
